@@ -1,0 +1,220 @@
+
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
+.heading h2{
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
+/* Header */
+#header {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#header::before {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+}
+nav.navbar {
+    padding: 4% 1.5%;
+}
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#showcase {
+    width: 100%;
+    text-align: center;
+    height: 80vh;
+    padding: 10%;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+#showcase h1 {
+    font-size: 4.5rem;
+    margin: 2% 0 4%;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+#showcase h2 {
+    color: rgb(158, 158, 22);
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: serif;
+    letter-spacing: 1.5px;
+    /* font-family: 'Roboto';s */
+}
+#showcase p {
+    width: 80%;
+    margin: auto;
+    color: #ddd;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+#showcase-btn {
+    background-color: rgb(158, 158, 22);
+    color: #fff;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+#showcase-btn:hover {
+    background-color: rgb(98, 98, 15);
+}
+
+/* Services */
+#services {
+    padding: 7% 15% 4%;
+    text-align: center;
+}
+.features-col {
+    padding: 5%;
+}
+.content {
+    padding-top: 3%;
+}
+.icon {
+    margin-bottom: 2rem;
+    color: rgb(158, 158, 22);
+}
+.features-col p {
+    color: #8f8f8f;
+    font-weight: 600;
+}
+
+/* Portfolio */
+#portfolio {
+    padding: 5% 15%;
+    background-color: #f8f9fa;
+}
+.portfolio-item {
+    max-width: 25rem;
+    margin: 3rem auto;
+    text-align: center;
+}
+.portfolio-img {
+    width: 100%;
+}
+.portfolio-caption {
+    padding: 1rem 0;
+    background-color: #fff;
+}
+.portfolio-caption p {
+    color: #8f8f8f;
+    font-weight: 600;
+}
+.portfolio-item{
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+.portfolio-item:hover {
+    box-shadow:1px 2px 20px rgba(0,0,0,0.5);
+}
+/* Contact us */
+
+#contact {
+    padding: 7% 15%;
+}
+.form-item input,
+#message {
+    width: 95%;
+    margin: 1rem auto;
+    padding: 20px 25px;
+}
+#submit-btn {
+    background-color: rgb(158, 158, 22);
+    color: #fff;
+    font-size: 1.5rem;
+}
+#submit-btn:hover {
+    background-color: rgb(98, 98, 15);
+}
+
+/* Footer */
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    padding: 3% 0 1%;
+}
+
+@media screen and (max-width: 1200px){
+    #showcase h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 770px){
+    #showcase h1 {
+        font-size: 3rem;
+        margin: 4% 0 6%;
+    }
+    #showcase p {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+    #showcase h2 {
+        font-size: 0.9rem;
+    }
+    #portfolio {
+        padding: 5% 7%;
+    }
+}
+@media screen and (max-width: 500px){
+    #showcase p {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    #showcase button {
+        font-size: 1.2rem;
+    }
+    #services {
+        padding: 15% 7% 4%;
+        text-align: center;
+    }
+    #showcase h1 {
+        font-size: 35px;
+        margin: 7% 0 9%;
+    }
+    #contact {
+        padding: 15% 7%;
+    }
+    #header {
+        height: 80vh;
+    }
+    #header::before {
+        height: 80vh;
+    }
+    #submit-btn {
+        font-size: 1.2rem;
+    }
+    #footer {
+        font-size: 12px;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
