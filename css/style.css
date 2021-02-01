@@ -40,6 +40,11 @@ nav.navbar {
     font-size: 2rem;
     font-weight: 600;
 }
+a.nav-item {
+    margin-right: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
 
 #showcase {
     width: 100%;
@@ -203,10 +208,10 @@ nav.navbar {
         padding: 15% 7%;
     }
     #header {
-        height: 80vh;
+        height: 95vh;
     }
     #header::before {
-        height: 80vh;
+        height: 95vh;
     }
     #submit-btn {
         font-size: 1.2rem;
@@ -216,5 +221,8 @@ nav.navbar {
     }
     .navbar-brand {
         font-size: 1.5rem;
+    }
+    nav.navbar {
+        padding: 10% 1.5%;
     }
 }
